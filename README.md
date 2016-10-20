@@ -137,10 +137,16 @@ return [
 
 ## Usage
 
-After you've installed the package and filled in the values in the config-file working with this package will be a breeze. All the following examples use the facade. Don't forget to import it at the top of your file.
+After you've installed the package and filled in the values in the config-file working with this package will be a breeze. All the following examples use the facade. Don't forget to import it at the top of your schedule file `app/Console/Kernel.php`.
 
 ```php
-use Newsletter;
+use Freemancontingent\Laravellogflare;
+...
+$schedule->call(function(){
+            $flare = new Flare();
+            $flare->firing();
+         })->cron('00 07 * * *');
+...         
 ```
 
 ## Contributing
