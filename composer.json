@@ -14,7 +14,7 @@
             "email": "helpdesk@freemancontingent.ie"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
       "php": "^5.3.3 || ^7.0",
       "laravel/framework": "5.3.*"
