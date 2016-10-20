@@ -1,0 +1,22 @@
+{
+    "name": "freemancontingent/laravellogflare",
+    "keywords": ["log", "email", "laravel"],
+    "description": "Checks logs on a schedule and emails alerts when errors are found. Stay ahead of your important applications to respond quickly to issues.",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Denis Oliveira",
+            "email": "denisolvr@gmail.com"
+        },
+        {
+            "name": "Freemancontingent",
+            "email": "helpdesk@freemancontingent.ie"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php": "^5.3.3 || ^7.0",
+      "laravel/framework": "5.3.*"
+    }
+}

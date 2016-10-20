@@ -1,49 +1,5 @@
-# laravel-log-flare
-Checks logs on a schedule and emails alerts when errors are found.  Stay ahead of your important applications to respond quickly to issues.
+<?php
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
-
-## Installation
-You can install this package via Composer using:
-
-```bash
-composer require freemancontingent/laravellogflare
-```
-
-You must also install this service provider.
-
-```php
-// config/app.php
-'providers' => [
-    ...
-    Freemancontingent\Laravellogflare\FrllflareServiceProvider::class,
-    ...
-];
-```
-
-If you want to make use of the facade you must install it as well.
-
-```php
-// config/app.php
-'aliases' => [
-    ..
-    'Logflare' => Freemancontingent\Laravellogflare\FrllflareServiceProvider::class,
-];
-```
-
-To publish the config file to `app/config/logflare.php` and the custom email template to `resources/views/freemancontingent/logflare/email.blade.php` run:
-
-```bash
-php artisan vendor:publish --provider="Freemancontingent\Laravellogflare\FrllflareServiceProvider"
-```
-
-This will publish a file `laravel-newsletter.php` in your config directory with the following contents:
-
-```php
 return [
 
     /*
@@ -133,26 +89,3 @@ return [
 
     'custom_email_template' => false,
 ];
-```
-
-## Usage
-
-After you've installed the package and filled in the values in the config-file working with this package will be a breeze. All the following examples use the facade. Don't forget to import it at the top of your file.
-
-```php
-use Newsletter;
-```
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## Credits
-
-- [Denis Oliveira](https://github.com/denisolvr)
-- [All Contributors](../../contributors)
-
-
-## License
-
-The Log Flare is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
