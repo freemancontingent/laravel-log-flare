@@ -18,5 +18,13 @@
     "require": {
       "php": "^5.3.3 || ^7.0",
       "laravel/framework": "5.3.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "Freemancontingent\\Laravellogflare\\": "src/"
+        }
     }
 }
