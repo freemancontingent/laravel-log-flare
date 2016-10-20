@@ -27,7 +27,7 @@ To publish the config file to `app/config/logflare.php` and the custom email tem
 php artisan vendor:publish --provider="Freemancontingent\Laravellogflare\FrllflareServiceProvider"
 ```
 
-This will publish a file `laravel-newsletter.php` in your config directory with the following contents:
+This will publish a file `app/config/logflare.php` in your config directory with the following contents:
 
 ```php
 return [
