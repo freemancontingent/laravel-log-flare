@@ -21,16 +21,6 @@ You must also install this service provider.
 ];
 ```
 
-If you want to make use of the facade you must install it as well.
-
-```php
-// config/app.php
-'aliases' => [
-    ..
-    'Logflare' => Freemancontingent\Laravellogflare\FrllflareServiceProvider::class,
-];
-```
-
 To publish the config file to `app/config/logflare.php` and the custom email template to `resources/views/freemancontingent/logflare/email.blade.php` run:
 
 ```bash
@@ -136,7 +126,7 @@ return [
 After you've installed the package and filled in the values in the config-file working with this package will be a breeze. All the following examples use the facade. Don't forget to import it at the top of your schedule file `app/Console/Kernel.php`.
 
 ```php
-use Freemancontingent\Laravellogflare;
+use Freemancontingent\Laravellogflare\Flare;
 ...
 $schedule->call(function(){
             $flare = new Flare();
